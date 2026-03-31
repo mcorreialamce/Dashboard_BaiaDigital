@@ -1,0 +1,66 @@
+# ─── Dados do satélite (NUNCA versionar — arquivos grandes e sensíveis) ───
+*.nc
+*.nc4
+*.h5
+*.hdf5
+*.hdf
+
+# Imagens geradas (podem ser grandes, regeneradas pelo pipeline)
+/goes/
+/data/
+**/imgs/
+**/density/
+GLM_DENS_*.png
+G19_B*.png
+
+# ─── Segredos e configuração local ───────────────────────────────────────
+.env
+.env.*
+!.env.example
+config_local.py
+secrets.json
+
+# ─── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-log.txt
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ─── Node / Frontend ──────────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+dist/
+.cache/
+
+# ─── IDEs ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Logs ─────────────────────────────────────────────────────────────────
+*.log
+logs/
+uvicorn.log
+
+# ─── Pytest / Coverage ────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
